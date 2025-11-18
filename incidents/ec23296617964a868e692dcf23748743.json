@@ -1,0 +1,37 @@
+{
+  "id_evento": "ec23296617964a868e692dcf23748743",
+  "timestamp_detectado": "2025-11-18T16:53:30.173860Z",
+  "fonte_deteccao": "splunk",
+  "nome_ransomware": "unknown_ransomware",
+  "familia_ransomware": "unknown_ransomware",
+  "confidence_familia": 0.5,
+  "hash_arquivo": null,
+  "hostname_afetado": "cmd.exe",
+  "ip_origem": [],
+  "ip_destino": [],
+  "usuario_afetado": null,
+  "acao_realizada": "file_encryption",
+  "status_incidente": "em_investigacao",
+  "fase_nist": "Deteccao",
+  "orientacao_nist": "Isolar host, coletar artefatos, preservar logs, bloquear hashes/IPs, acionar playbook",
+  "acao_recomendada": [
+    "Isolar o host da rede",
+    "Coletar memory dump e logs",
+    "Bloquear IOC (hash/IP/dominio)",
+    "Restaurar de backup confiável"
+  ],
+  "iocs_relacionados": {
+    "hashes": [],
+    "ips": [],
+    "domains": [
+      "cmd.exe"
+    ]
+  },
+  "gravidade": 4,
+  "fonte_cti": "local_keyword",
+  "resumo_evento_rag": "Detected possible ransomware (unknown_ransomware) on cmd.exe with hash n/a",
+  "link_evidencias": "./incidents/ec23296617964a868e692dcf23748743.log",
+  "created_at": "2025-11-18T16:53:30.173860Z",
+  "created_by": "log_aggregator_enriched",
+  "raw_log": "C:\\Users\\admin\\Desktop\\RANSOMWARE_ENCRYPTED_FILES.txt C:\\windows\\system32\\cmd.exe"
+}

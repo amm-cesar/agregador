@@ -1,0 +1,7 @@
+requests
+lxml
+pandas
+numpy
+scikit-learn
+scipy
+python-dateutil
